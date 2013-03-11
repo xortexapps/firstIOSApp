@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title></title>
+</head>
+    <body>
+        <!-- PopUp fuer den Kartendownload -->
+        <div data-role="page" id="popup_mapDownload">
+
+            <div data-role="content">
+
+                <h2>Kartendownload</h2>
+                <!-- Div-Tag fuer die Auswahl der Kartentypen-->
+                <div data-role="fieldcontain">
+                    <label for="selectDownloadMaps">Kartentypen:</label>
+                    <select name="selectDownloadMaps" id="selectDownloadMaps" multiple="multiple">
+
+                        <option name="selStreetMap" value="selStreetMap">OpenStreetMap</option>
+                        <option selected="true" name="selCycleMap" value="selCycleMap">OpenCycleMap</option>
+                    </select>
+                </div>
+
+                <!-- Div-Tag fuer die Auswahl der Zoomlevels-->
+                <div data-role="fieldcontain">
+                    <label for="selectDownloadZoomLevels">Zoom-Levels:</label>
+                    <select name="selectDownloadZoomLevels" id="selectDownloadZoomLevels" multiple="multiple">
+
+                        <option name="selNear" value="selNear" >Nahe</option>
+                        <option selected="true" name="selNormal" value="selNormal">Normal</option>
+                        <option name="selFar" value="selFar">Weit</option>
+                        <option selected="true" name="selOverview" value="selOverview">Übersicht</option>
+                    </select>
+                </div>
+
+                <div data-role="fieldcontain">
+                    <div id="div_mapDownloadControls" data-role="controlgroup" data-type="horizontal">
+                        <a id="btnDownloadMap" href="" data-role="button" data-inline="true">Laden</a>
+                        <a href="track_details.html" data-rel="back" data-role="button" data-inline="true">Abbrechen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

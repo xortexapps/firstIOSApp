@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div data-role="page" id="popup_recording">
+        <div data-role="content">
+
+            <h2 id="recordDialogHeadline">Trackaufzeichnung</h2>
+
+            <!--<label for="recTitle">Titel:</label>-->
+            <input type="text" name="recTitle" style="width: 99%;" id="recTitle" placeholder="Titel..." value="" />
+
+            <div data-role="none" id="controlsRecordDialog">
+                <div data-role="controlgroup" data-type="horizontal">
+                    <a id="btnSaveTrack" style="margin-left: 0%; width: 50%" href="" data-role="button" data-inline="true">Speichern</a>
+                    <a id="btnPause" style="width: 49%" href="" data-role="button" data-rel="back" data-inline="true">Zurück</a>
+                </div>
+
+                <div data-role="controlgroup" data-type="horizontal">
+                   <a id="btnCancelRecording" style="margin-left: 0%; width: 99%; background: red" data-rel="back" href="" data-role="button">Track verwerfen</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

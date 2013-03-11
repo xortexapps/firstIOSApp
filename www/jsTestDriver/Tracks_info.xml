@@ -1,0 +1,20 @@
+<tracks>
+<track>
+    <id>456</id>
+    <title>Schoene Tour</title>
+    <image>http://www.welt.de/multimedia/archive/00226/Israel_-Mountainbik_226868p.jpg</image>
+    <trackrank>10</trackrank>
+</track>  
+<track>
+    <id>456</id>
+    <title>Schoene Tour in Neufelden</title>
+    <image>http://www.welt.de/multimedia/archive/00226/Israel_-Mountainbik_226868p.jpg</image>
+    <trackrank>11</trackrank>
+</track> 
+<track>
+    <id>456</id>
+    <title>Schoene Tour in Niederwaldkirchen</title>
+    <image></image>
+    <trackrank>12</trackrank>
+</track> 
+</tracks>

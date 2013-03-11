@@ -1,0 +1,8 @@
+div.info-sel{
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    height: 15%;
+    z-index: 1000;
+}
+

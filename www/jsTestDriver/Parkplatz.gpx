@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<gpx version="1.1" creator="SmartRunner - http://www.smartrunner.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<time>2012-01-20T12:57:24+01:00</time>
+<bounds minlat="48.48395333" minlon="13.98835659" maxlat="48.48452359" maxlon="13.98903552" />
+<wpt lat="48.48416435" lon="13.98880396"><ele>578</ele>
+<time>2012-01-11T12:43:57+01:00</time>
+<speed>0</speed>
+<name>Start</name>
+<sym>white anchor</sym>
+</wpt>
+<wpt lat="48.4841155" lon="13.98900371"><ele>570</ele>
+<time>2012-01-11T12:46:07+01:00</time>
+<speed>4.5</speed>
+<name>Ziel</name>
+<sym>white anchor</sym>
+</wpt>
+<trk><name>Strecke Parkplatz vom 11.01.2012 11:43 Uhr</name>
+<trkseg><trkpt lat="48.48416435" lon="13.98880396"><ele>578</ele>
+<time>2012-01-11T23:27:54+01:00</time>
+<speed>0</speed>
+</trkpt>
+<trkpt lat="48.48421374" lon="13.98879365"><ele>580</ele>
+<time>2012-01-11T23:28:06+01:00</time>
+<speed>2.6</speed>
+</trkpt>
+<trkpt lat="48.4842702" lon="13.98875066"><ele>575</ele>
+<time>2012-01-11T23:28:11+01:00</time>
+<speed>2.8</speed>
+</trkpt>
+<trkpt lat="48.48431397" lon="13.98869937"><ele>575</ele>
+<time>2012-01-11T23:28:16+01:00</time>
+<speed>4.1</speed>
+</trkpt>
+<trkpt lat="48.48436076" lon="13.98865665"><ele>574</ele>
+<time>2012-01-11T23:28:21+01:00</time>
+<speed>4.4</speed>
+</trkpt>
+<trkpt lat="48.48441203" lon="13.98863747"><ele>571</ele>
+<time>2012-01-11T23:28:26+01:00</time>
+<speed>4.1</speed>
+</trkpt>
+<trkpt lat="48.48446758" lon="13.98860374"><ele>569</ele>
+<time>2012-01-11T23:28:32+01:00</time>
+<speed>4.2</speed>
+</trkpt>
+<trkpt lat="48.48449792" lon="13.98853614"><ele>571</ele>
+<time>2012-01-11T23:28:36+01:00</time>
+<speed>4.1</speed>
+</trkpt>
+<trkpt lat="48.48452359" lon="13.98845507"><ele>571</ele>
+<time>2012-01-11T23:28:42+01:00</time>
+<speed>4.3</speed>
+</trkpt>
+<trkpt lat="48.4844943" lon="13.98837952"><ele>572</ele>
+<time>2012-01-11T23:28:47+01:00</time>
+<speed>4.2</speed>
+</trkpt>
+<trkpt lat="48.48443506" lon="13.98835659"><ele>572</ele>
+<time>2012-01-11T23:28:51+01:00</time>
+<speed>4.2</speed>
+</trkpt>
+<trkpt lat="48.48439407" lon="13.98840126"><ele>571</ele>
+<time>2012-01-11T23:28:55+01:00</time>
+<speed>4</speed>
+</trkpt>
+<trkpt lat="48.48435039" lon="13.98846914"><ele>571</ele>
+<time>2012-01-11T23:29:00+01:00</time>
+<speed>4.3</speed>
+</trkpt>
+<trkpt lat="48.48429833" lon="13.9885096"><ele>573</ele>
+<time>2012-01-11T23:29:06+01:00</time>
+<speed>4.1</speed>
+</trkpt>
+<trkpt lat="48.48425266" lon="13.98855631"><ele>572</ele>
+<time>2012-01-11T23:29:11+01:00</time>
+<speed>4.1</speed>
+</trkpt>
+<trkpt lat="48.48421695" lon="13.98861149"><ele>573</ele>
+<time>2012-01-11T23:29:16+01:00</time>
+<speed>3.2</speed>
+</trkpt>
+<trkpt lat="48.48416786" lon="13.98863827"><ele>573</ele>
+<time>2012-01-11T23:29:21+01:00</time>
+<speed>3.3</speed>
+</trkpt>
+<trkpt lat="48.48412666" lon="13.9886929"><ele>573</ele>
+<time>2012-01-11T23:29:25+01:00</time>
+<speed>3.5</speed>
+</trkpt>
+<trkpt lat="48.48408001" lon="13.98875169"><ele>572</ele>
+<time>2012-01-11T23:29:30+01:00</time>
+<speed>4.4</speed>
+</trkpt>
+<trkpt lat="48.48403582" lon="13.98879879"><ele>573</ele>
+<time>2012-01-11T23:29:35+01:00</time>
+<speed>5.1</speed>
+</trkpt>
+<trkpt lat="48.48398699" lon="13.98883954"><ele>572</ele>
+<time>2012-01-11T23:29:40+01:00</time>
+<speed>5.3</speed>
+</trkpt>
+<trkpt lat="48.48395333" lon="13.988896"><ele>572</ele>
+<time>2012-01-11T23:29:45+01:00</time>
+<speed>4.9</speed>
+</trkpt>
+<trkpt lat="48.48397393" lon="13.98896535"><ele>572</ele>
+<time>2012-01-11T23:29:49+01:00</time>
+<speed>4.4</speed>
+</trkpt>
+<trkpt lat="48.48400957" lon="13.989032"><ele>571</ele>
+<time>2012-01-11T23:29:55+01:00</time>
+<speed>4.6</speed>
+</trkpt>
+<trkpt lat="48.48405913" lon="13.98903552"><ele>571</ele>
+<time>2012-01-11T23:29:59+01:00</time>
+<speed>4.6</speed>
+</trkpt>
+<trkpt lat="48.4841155" lon="13.98900371"><ele>570</ele>
+<time>2012-01-11T23:30:04+01:00</time>
+<speed>4.5</speed>
+</trkpt>
+</trkseg>
+</trk>
+</gpx>

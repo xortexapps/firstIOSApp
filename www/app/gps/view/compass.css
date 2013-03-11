@@ -1,0 +1,14 @@
+input.btn-compass
+{
+    position:absolute;
+    height:15%;
+    left:2%;
+    top:2%;
+    opacity: 0.9;
+
+    /*-moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;*/
+}
+

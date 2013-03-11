@@ -1,0 +1,11 @@
+/* Modifikation der jQuery Mobile CSS Datei, um der Navigationsleiste eigene Icons hinzufuegen zu koennen */
+.nav-custom .ui-btn .ui-btn-inner { padding-top: 40px !important; }
+.nav-custom .ui-btn .ui-icon { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
+#btn_search .ui-icon { background:  url(../../../res/Icons/Button-Suche.png) 50% 50% no-repeat; background-size: 48px 40px; }
+/*#btn_waypoint .ui-icon { background:  url(../../../res/Icons/Button-Leiste-Wegpunkt.png) 50% 50% no-repeat;  background-size: 48px 40px; }*/
+#btn_tracks .ui-icon { background:  url(../../../res/Icons/Button-Leiste-Tracks.png) 50% 50% no-repeat;  background-size: 48px 40px; }
+#btn_record .ui-icon { background:  url(../../../res/Icons/Button-Leiste-Rec-Grau.png) 50% 50% no-repeat;  background-size: 48px 40px; }
+#btn_settings .ui-icon { background:  url(../../../res/Icons/Button-Leiste-Einstellungen.png) 50% 50% no-repeat;  background-size: 48px 40px;}
+
+
+

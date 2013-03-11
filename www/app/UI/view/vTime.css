@@ -1,0 +1,24 @@
+div.time
+{
+    position:absolute;
+    top: 10%;
+    right: 2%;
+    height: 10%;
+    width: 25%; 
+    z-index: 1100;
+}
+p.time
+{
+    /*border-top: 5px;
+    border-bottom:5px; */
+    border-radius: 7px;
+    /*box-shadow: 4px 4px 3px 1px #B0C4DE;
+    border-color: #5a5a5a;*/
+    background-color: #5a5a5a;
+    color: #ffffff;
+/*  font-size: 90%;*/
+    font-family: Arial;
+    text-indent: 5%;
+    z-index: 1100;
+    opacity: 0.9;
+}

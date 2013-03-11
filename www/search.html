@@ -1,0 +1,95 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+    </head>
+    <body>
+        <div data-role="page" id="search" data-dom-cache="true">
+            <div data-role="header" data-position = "fixed" data-tap-toggle="false">
+                <a href="./" data-rel="back" data-role="button" data-icon="back">Zurück</a>
+                <h1>Suchen</h1>
+                <a id="btn_home_search" href="" data-role="button" data-icon="home">Karte</a>
+            </div>
+            <!--Eingeben der URL um GPX-Datei herunterzuladen-->
+            <div data-role="content">
+                <div class="content-primary">
+                    <div data-role="fieldcontain">
+                        <label for="umkreis">Umkreis: (um Kartenmittelpunkt)</label>
+                        <input type="text" name="umkreis" id="umkreis" value="20" placeholder="Umkreis in km"/>   
+                    </div> 
+                    <div data-role="fieldcontain">
+                        <label for="trackrank">Rank:</label>
+                        <input type="range" name="trackrank" id="trackrank" value="3" min="3" max="10"/>    
+                    </div>
+                    <!--Suchbegriff-->
+                    <div data-role="fieldcontain"> 
+                        <label for="searchword">Suchbegriff:</label>
+                        <input type="text" name="searchword" id="searchword" value="" placeholder="Suchbegriff"/>   
+                    </div> 
+                    <!--Kategorien-->
+                    <div data-role="fieldcontain">
+                        <label for="select-category" class="select">Kategorien:</label>
+                        <select name="select-category" id="select-category" multiple="multiple" data-native-menu="false">
+                        </select>
+                    </div>
+                    
+                    <div data-role="collapsible" id="div_extended_options" data-collapsed="true" data-theme="c" data-content-theme="c">
+                        <h3>erweiterte Einstellung</h3>
+                        <!--maximale Höhenmeter-->
+                        <div data-role="fieldcontain">
+                            <label for="hoehemax">maximale Höhenmeter:</label>
+                            <input type="text" name="hoehemax" id="hoehemax" value="" placeholder="maximale Höhenmeter in m"/>   
+                            <label for="hoehemin">minimale Höhenmeter:</label>
+                            <input type="text" name="hoehemin" id="hoehemin" value="" placeholder="minimale Höhenmeter in m"/> 
+                        </div> 
+
+                        <!--Distanz-->
+                        <div data-role="fieldcontain"> 
+                            <label for="distancemax">maximale Distanz:</label>
+                            <input type="text" name="distancemax" id="distancemax" value="" placeholder="maximale Distanz in km"/>  
+                            <label for="distancemin">minimale Distanz:</label>
+                            <input type="text" name="distancemin" id="distancemin" value="" placeholder="minimale Distanz in km"/>  
+                        </div> 
+                        
+
+                        <div data-role="fieldcontain">
+                            <div data-role="controlgroup" id="div_extended_options_checkboxes">
+                                <label><input type="checkbox" name="checkbox-0" id="check_only_circuits" /> Nur Rundkurse </label>
+                                <label><input type="checkbox" name="checkbox-1" id="check_only_my_tours" /> Nur eigene Touren </label>
+                                <label><input type="checkbox" name="checkbox-2" id="check_only_favourites" /> Nur Favouriten </label>
+                            </div>
+                            <div data-role="fieldcontain">
+                                <input type="text" name="tags" id="txt_tag" value="" class="ui-disabled" placeholder="Tag fuer eigene Favouriten"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Download für liste-->
+                    <div data-role="none" width="60%" id="div_btn_showtracks">
+                        <a href="track_list.html" data-role="button" id="btn_showtracks" >Zeige Tracks</a>
+                    </div>
+                </div>               
+            </div>
+            <!-- Die Fußzeile der Seite mit den Buttons -->
+            <div data-role="footer" id="div_footer" data-position="fixed" data-tap-toggle="false">
+                <div data-role="navbar" class="nav-custom" id="nav_footer" data-tap-toggle="false">
+                    <ul>
+                        <li><a href="search.html" id="btn_search" data-icon="custom">Suche</a></li>
+                        <li><a href="trackManagement.html" id="btn_tracks" data-icon="custom">Tracks</a></li>
+                        <li>
+                            <div id="div_btn_record">
+                                <a href="#" id="btn_record" data-icon="custom">Aufzeichnen</a>
+                            </div>
+                        </li>
+                        <li><a href="./settings.html" id="btn_settings" data-icon="custom" >Einstellungen</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

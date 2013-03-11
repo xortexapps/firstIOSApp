@@ -1,0 +1,20 @@
+div.progressbar
+{
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    height: 4px;
+    width: 0%;
+    background-color: red;
+    z-index: 1001;
+}
+
+div.progressbar_container
+{
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    height: 4px;
+    width: 100%;
+    z-index: 1001;
+}

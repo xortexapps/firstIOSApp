@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <div data-role="page" id="tracklist" class="type-interior">
+            <div data-role="header" data-position="fixed">
+                <a href="index.php" data-rel="back" data-role="button" data-icon="back">Zurück</a>
+                <h1>Track Liste</h1>
+                <a id="btn_home" href="" data-role="button" data-icon="home">Karte</a>
+            </div>
+            <div data-role="content">
+                <!--Liste der ausgewählten tracks-->
+                <div class="content-primary" id="div_showtracks">
+                    <h3 id="h_InfoTag">Lade Trackliste...</h3>
+                    <ul data-role="listview" data-inset="true" id="ul_track" data-split-icon="gear" data-split-theme="d">
+                    </ul>
+                </div>
+            </div>
+            <!-- Die Fußzeile der Seite mit den Buttons -->
+            <div data-role="footer" id="div_footer" data-position="fixed" data-tap-toggle="false">
+                <div data-role="navbar" class="nav-custom" id="nav_footer" data-tap-toggle="false">
+                    <ul>
+                        <li><a href="search.html" id="btn_search" data-icon="custom">Suche</a></li>
+                        <li><a href="trackManagement.html" id="btn_tracks" data-icon="custom">Tracks</a></li>
+                        <li>
+                            <div id="div_btn_record">
+                                <a href="#" id="btn_record" data-icon="custom">Aufzeichnen</a>
+                            </div>
+                        </li>
+                        <li><a href="./settings.html" id="btn_settings" data-icon="custom" >Einstellungen</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

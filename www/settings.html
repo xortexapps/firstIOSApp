@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <div data-role="page" id="settings">
+            <div data-role="header" data-position="fixed" data-tap-toggle="false">
+                <a href="./" data-rel="back" data-role="button" data-icon="back">Zurück</a>
+                <h1>Einstellungen</h1>
+                <a id="btn_home" href="" data-role="button" data-icon="home">Karte</a>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" id="ul_settings">
+                    <li data-role="divider">Optionen</li>
+                    <li data-role="fieldcontain" data-theme="d" id="li_options">
+                        
+                        <!--<label for="slider_simulation">Simulation</label>-->
+                        <div data-role="controlgroup" id="div_simulation">
+                            <label><input type="checkbox" name="checkbox-0" id="check_compass" /> Kompass </label>
+                            <label><input type="checkbox" name="checkbox-1" id="check_accuracy" /> Positionsradius </label>
+                            <label><input type="checkbox" name="checkbox-2" id="check_simulation" /> Simulation </label>
+                            <label><input type="checkbox" name="checkbox-3" id="check_logging" /> Logging </label>
+                        <!--<select name="slider_simulation" id="slider_simulation" data-role="slider">
+                                <option value="off">Off</option>
+                                <option value="on">On</option>
+                        </select>-->
+                        </div>
+                    </li>
+                    
+                    <li data-role="fieldcontain" data-theme="d">  
+                        <div id="div_mapselect">
+                            <select name="select-map" id="select-map" data-native-menu="false">
+                               <option value="Standard" id="selected_map" selected="true">Standard</option>
+                               <option value="cyclemap" id="noselected_map" selected="false">Cyclemap</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li data-role="divider">Benutzerdaten</li>
+                    <li data-role="fieldcontain" data-theme="d">
+                        <label for="text_username">Benutzername:</label>
+                        <input type="text" name="text_username" id="text_username" value="" placeholder="Benutzername"  />
+                    </li>   
+                    <li data-role="fieldcontain" data-theme="d">
+                        <label for="text_password">Passwort:</label>
+                        <input type="password" name="text_password" id="text_password" value="" placeholder="Passwort" />
+                        <li data-role="fieldcontain" data-theme="d">
+                            <div id="div_userdata">
+                                <a id="btn_userdata" href="" data-rel="back" data-role="button" data-inline="true">Speichern</a>
+                            </div>
+                        </li>
+                    </li>
+                    <li data-role="divider"></li>
+                    <!--<li data-role="fieldcontain" data-theme="d">-->
+                        <blockquote><a data-role="none" id="a_feedback" href="">kontakt@gps-tour.info</a> <br /><br />
+                        © Pointner & Rabeder GmbH<br /><br />
+                        Diese App ist im Rahmen des Abschlussprojektes von Thomas Plakolb und Julian Reichinger, an der HTL Neufelden entstanden<br /><br />
+                        Sämtliches Kartenmaterial stammt von OpenStreetMap<br />
+                        © OpenStreetMap und Mitwirkende, CC BY-SA</blockquote><br />
+                    <!--</li>  -->
+                </ul>
+            </div>
+            <!-- Die Fußzeile der Seite mit den Buttons -->
+            <div data-role="footer" id="div_footer" data-position="fixed" data-tap-toggle="false">
+                <div data-role="navbar" class="nav-custom" id="nav_footer" data-tap-toggle="false">
+                    <ul>
+                        <li><a href="search.html" id="btn_search" data-icon="custom">Suche</a></li>
+                        <li><a href="trackManagement.html" id="btn_tracks" data-icon="custom">Tracks</a></li>
+                        <li>
+                            <div id="div_btn_record">
+                                <a href="#" id="btn_record" data-icon="custom">Aufzeichnen</a>
+                            </div>
+                        </li>
+                        <li><a href="./settings.html" id="btn_settings" data-icon="custom" >Einstellungen</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

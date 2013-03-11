@@ -1,0 +1,70 @@
+div.createWaypointStart {
+
+    /* Die Einstellungen fuer die Animation*/
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    -moz-transition: -moz-transform 1s ease-in-out;
+    -o-transition: -o-transform 1s ease-in-out;
+    -ms-transition: -ms-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+
+    /* Die Farbe des Kreises */
+    background: rgba( 249, 150, 0, 0.8 );
+    border-radius: 100%;
+
+    /*Anfangs auf ein zehntel der Groesse setzen*/
+    -webkit-transform: scale( 0.1 );
+    -moz-transform: scale( 0.1 );
+    -o-transform: scale( 0.1 );
+    -ms-transform: scale( 0.1 );
+    transform: scale( 0.1 );
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+    z-index: 1001;
+}
+
+div.createWaypointAnimationProperties {
+
+    /* Die Einstellungen fuer die Animation*/
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    -moz-transition: -moz-transform 1s ease-in-out;
+    -o-transition: -o-transform 1s ease-in-out;
+    -ms-transition: -ms-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+}
+
+div.rescaleCreateWaypoint {
+
+    /* Die Einstellungen fuer die Animation*/
+    -webkit-transition: -webkit-transform 0s;
+    -moz-transition: -moz-transform 0s;
+    -o-transition: -o-transform 0s;
+    -ms-transition: -ms-transform 0s;
+    transition: transform 0s;
+
+    /* Die Einstellungen fuer die Animation */
+    -webkit-transform: scale( 0.1 );
+    -moz-transform: scale( 0.1 );
+    -o-transform: scale( 0.1 );
+    -ms-transform: scale( 0.1 );
+    transform: scale( 0.1 );
+}
+
+div.createWaypointOuterRing {
+
+    background: transparent;
+    border-radius: 100%;
+    border: 5px solid #e99600;
+    position: absolute;
+    z-index: 1001;
+}
+
+div.animateCreateWaypoint {
+    -webkit-transform: scale( 1 );
+    -moz-transform: scale( 1 );
+    -o-transform: scale( 1 );
+    -ms-transform: scale( 1 );
+    transform: scale( 1 );
+}
