@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GPS-Tour.info Navigate</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<div data-role="page" id="popup_upload" data-dom-cache="true">
+    <div data-role="content">
+
+        <h2 id="recordDialogHeadline">Trackupload</h2>
+
+        <h3>Informationen</h3>
+
+        <label for="uploadTitle">Titel:</label>
+        <input type="text" name="uploadTitle" id="uploadTitle" placeholder="Titel..." value="" />
+
+        <label for="uploadDescription">Beschreibung:</label>
+        <!--<input type="text" name="uploadDescription" id="uploadDescription" placeholder="Beschreibung..." value=""  />-->
+        <textarea name="uploadDescription" id="uploadDescription"></textarea>
+
+        <!--Kategorien-->
+        <div data-role="fieldcontain">
+            <label for="selectUploadCategory" class="select">Kategorie:</label>
+            <select name="selectUploadCategory" id="selectUploadCategory" data-native-menu="false">
+            </select>
+        </div>
+
+        <div data-role="fieldcontain">
+            <label for="sliderFun">Spaß:</label>
+            <input type="range" name="sliderFun" id="sliderFun" value="1" min="1" max="5"/>
+
+            <label for="sliderFun">Technik:</label>
+            <input type="range" name="sliderSkill" id="sliderSkill" value="1" min="1" max="5"/>
+
+            <label for="sliderFun">Kondition:</label>
+            <input type="range" name="sliderCondition" id="sliderCondition" value="1" min="1" max="5"/>
+
+            <label for="sliderFun">Landschaft:</label>
+            <input type="range" name="sliderLandscape" id="sliderLandscape" value="1" min="1" max="5"/>
+        </div>
+
+        <label for="uploadCountry">Land:</label>
+        <input type="text" name="uploadCountry" id="uploadCountry" value=""  />
+
+        <label for="uploadState">Bundesland:</label>
+        <input type="text" name="uploadState" id="uploadState" value=""  />
+
+        <label for="uploadCounty">Bezirk:</label>
+        <input type="text" name="uploadCounty" id="uploadCounty" value=""  />
+
+        <div data-role="fieldcontain" id="divUploadTrackInfo">
+        </div>
+
+        <div data-role="none" id="controlsUploadDialog">
+            <div data-role="controlgroup" data-type="horizontal">
+                <a id="btnSendTrack" style="margin-left: 0%; width: 50%" href="" data-role="button" data-inline="true">Hochladen</a>
+                <a style="width: 49%" href="" data-role="button" data-rel="back" data-inline="true">Zurück</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

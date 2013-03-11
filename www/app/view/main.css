@@ -1,0 +1,14 @@
+html, body {
+  padding: 0;
+  height: 95%;
+  margin: 0;
+}
+.portrait, .portrait #div_main {
+  min-height: 0;
+}
+#div_main, #div_main .ui-content {
+  width: 100%;
+  height: 100%;
+}
+
+

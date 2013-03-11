@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GPS-Tour.info Navigate</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    </head>
+    <body>
+
+        <div data-role="page" id="trackdetails">
+            <div data-role="header" data-position="fixed">
+                <a href="track_list.html" data-rel="back" data-role="button" data-icon="back">Zurück</a>
+                <h1>Track Details</h1>
+                <a id="btn_home" href="index.html" data-role="button" data-icon="home">Karte</a>
+            </div>
+            <div data-role="content" id="trackd">
+                
+                <div id="template_details" data-role="fieldcontain">
+                    <!--Details-->
+                    <h2 id="h_title">Track</h2>
+                    <h4>Infos: </h4>
+                    <p id="p_trackInfo"></p>
+
+                    <h4>Höhenprofil:</h4>
+                    <img id="i_profile"/>
+                </div>
+                
+                <div id="div_controls" data-role="fieldcontain">
+                </div>
+            </div>
+            <!-- Die Fußzeile der Seite mit den Buttons -->
+            <div data-role="footer" id="div_footer" data-position="fixed" data-tap-toggle="false">
+                <div data-role="navbar" class="nav-custom" id="nav_footer" data-tap-toggle="false">
+                    <ul>
+                        <li><a href="search.html" id="btn_search" data-icon="custom">Suche</a></li>
+                        <li><a href="trackManagement.html" id="btn_tracks" data-icon="custom">Tracks</a></li>
+                        <li>
+                            <div id="div_btn_record">
+                                <a href="#" id="btn_record" data-icon="custom">Aufzeichnen</a>
+                            </div>
+                        </li>
+                        <li><a href="./settings.html" id="btn_settings" data-icon="custom" >Einstellungen</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+</html>

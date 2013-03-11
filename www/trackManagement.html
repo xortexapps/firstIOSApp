@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GPS-Tour.info Navigate</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    </head>
+    <body>
+         <div data-role="page" id="trackManagement">
+            <div data-role="header" data-position="fixed">
+                <a href="index.php" data-rel="back" data-role="button" data-icon="back">Zurück</a>
+                <h1>Track-Management</h1>
+                <a id="btn_home" href="index.html" data-role="button" data-icon="home">Karte</a>
+            </div>
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <ul data-role="listview"> 
+                        <li>
+                            <div data-role="controlgroup" data-type="horizontal">
+                                <a id="btn_showAllTracks" href="" data-role="button" data-inline="true">Show</a>
+                                <a id="btn_hideAllTracks" href="" data-role="button" data-inline="true">Hide</a>
+                                <a id="btn_deleteAllTracks" href="" data-role="button" data-inline="true">Delete</a>
+                            </div>
+                        </li>
+                        <li data-role="divider">Tracks</li>
+                    </ul>
+                </div>
+                
+                <div data-role="fieldcontain" id="div_list_container">
+                    <ul data-role="listview" data-split-icon="delete" data-split-theme="d" id="list_trackManagement">
+                        
+                    </ul>
+                </div>
+            </div>
+             <!-- Die Fußzeile der Seite mit den Buttons -->
+             <div data-role="footer" id="div_footer" data-position="fixed" data-tap-toggle="false">
+                 <div data-role="navbar" class="nav-custom" id="nav_footer" data-tap-toggle="false">
+                     <ul>
+                         <li><a href="search.html" id="btn_search" data-icon="custom">Suche</a></li>
+                         <li><a href="trackManagement.html" id="btn_tracks" data-icon="custom">Tracks</a></li>
+                         <li>
+                             <div id="div_btn_record">
+                                 <a href="#" id="btn_record" data-icon="custom">Aufzeichnen</a>
+                             </div>
+                         </li>
+                         <li><a href="./settings.html" id="btn_settings" data-icon="custom" >Einstellungen</a></li>
+                     </ul>
+                 </div>
+             </div>
+        </div>
+    </body>
+</html>
