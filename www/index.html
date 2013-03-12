@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--<html lang="de" manifest="http://gps-tour.work.5.xortex.com/redx/ext/webapp/manifest.php?resources=REDXREFff5613074d15603c77f8d31922b2ca31">-->
+<html lang="de">
+	<head>
+		<title>GPS-Tour.info Navigate</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="viewport" content="minimum-scale=1.0, maximum-scale=1.0, width=device-width, initial-scale = 1.0, user-scalable=0" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<link rel="apple-touch-icon" href="res/pics/touch-icon-iphone.png" />
+		<link rel="apple-touch-icon" href="res/pics/touch-icon-ipad.png" sizes="72x72" />
+		<link rel="apple-touch-icon" href="res/pics/touch-icon-iphone4.png" sizes="114x114" />
+		<link rel="apple-touch-startup-image" href="res/startup.png" />
+		<link href="add2home/add2home.css" rel="stylesheet" media="all" type="text/css" />
+		<link href="lib/jquery.mobile.css" rel="stylesheet" media="all" type="text/css" />
+		<link href="lib/jquery.toastmessage.css" rel="stylesheet" media="all" type="text/css" />
+		<link href="app/view/main.css" rel="stylesheet" media="all" type="text/css" />
+		<link href="app/gps/view/compass.css" rel="stylesheet" media="all" type="text/css" />
+		<link href="app/UI/view/btn-zoom-minus.css" rel="stylesheet" media="all" type="text/css" />
+		<link href="app/UI/view/btn-zoom-plus.css" rel="stylesheet" media="all" type="text/css" />
+		<link href="app/UI/view/btn-resize.css" rel="stylesheet" media="all" type="text/css" />
+		<link href="app/UI/view/navbar-custom.css" rel="stylesheet" media="all" type="text/css" />
+		<link href="app/map/view/openlayers.css" rel="stylesheet" media="all" type="text/css" />
+		<link href="app/map/view/createWaypoint.css" rel="stylesheet" media="all" type="text/css" />
+		<link href="app/UI/view/info-select.css" rel="stylesheet" media="all" type="text/css" />
+		<link href="app/UI/view/altitude.css" rel="stylesheet" media="all" type="text/css" />
+		<link href="app/UI/view/speed.css" rel="stylesheet" media="all" type="text/css" />
+		<link href="app/UI/view/distance.css" rel="stylesheet" media="all" type="text/css" />
+		<link href="app/UI/view/vTime.css" rel="stylesheet" media="all" type="text/css" />
+		<link href="app/UI/view/progressbar.css" rel="stylesheet" media="all" type="text/css" />
+		<link href="app/recording/view/recordDialog.css" rel="stylesheet" media="all" type="text/css" />
+		<script src="add2home/config.js" type="text/javascript"></script>
+		<script src="add2home/add2home.js" type="text/javascript"></script>
+		<script src="lib/jquery.js" type="text/javascript"></script>
+		<script src="lib/underscore.js" type="text/javascript"></script>
+		<script src="lib/backbone.js" type="text/javascript"></script>
+		<script src="lib/jquery.mobile.js" type="text/javascript"></script>
+		<script src="lib/OpenLayers/OpenLayers.js" type="text/javascript"></script>
+		<script src="lib/jquery.toastmessage.js" type="text/javascript"></script>
+		<script src="app/gps/model/mCompass.js" type="text/javascript"></script>
+		<script src="app/geolocation/geolocation.js" type="text/javascript"></script>
+		<script src="app/geolocation/simulation.js" type="text/javascript"></script>
+		<script src="app/model/app.js" type="text/javascript"></script>
+		<script src="app/gps/model/altitude.js" type="text/javascript"></script>
+		<script src="app/gps/model/speed.js" type="text/javascript"></script>
+		<script src="app/gps/model/mAccuracy.js" type="text/javascript"></script>
+		<script src="app/UI/model/distance.js" type="text/javascript"></script>
+		<script src="app/UI/model/mProgressbar.js" type="text/javascript"></script>
+		<script src="app/data/model/database.js" type="text/javascript"></script>
+		<script src="app/data/model/localStorage.js" type="text/javascript"></script>
+		<script src="app/data/model/readandrequestxml.js" type="text/javascript"></script>
+		<script src="app/data/model/settings.js" type="text/javascript"></script>
+		<script src="app/data/model/json.js" type="text/javascript"></script>
+		<script src="app/data/model/mXmlWriter.js" type="text/javascript"></script>
+		<script src="app/data/model/mColors.js" type="text/javascript"></script>
+		<script src="app/data/transfer/ajax.js" type="text/javascript"></script>
+		<script src="app/data/canvasConverter.js" type="text/javascript"></script>
+		<script src="app/tour/model/waypoint.js" type="text/javascript"></script>
+		<script src="app/tour/model/track.js" type="text/javascript"></script>
+		<script src="app/tour/model/trackpoint.js" type="text/javascript"></script>
+		<script src="app/tour/model/mCategories.js" type="text/javascript"></script>
+		<script src="app/test/model/logger.js" type="text/javascript"></script>
+		<script src="app/test/model/log-history.js" type="text/javascript"></script>
+		<script src="app/map/model/Drag.js" type="text/javascript"></script>
+		<script src="app/map/model/mMapDownload.js" type="text/javascript"></script>
+		<script src="app/map/model/CacheRead.js" type="text/javascript"></script>
+		<script src="app/map/model/CacheWrite.js" type="text/javascript"></script>
+		<script src="app/map/model/mUserWaypoints.js" type="text/javascript"></script>
+		<script src="app/map/model/mWaypointCreation.js" type="text/javascript"></script>
+		<script src="app/map/CacheDatabaseStorage.js" type="text/javascript"></script>
+		<script src="app/map/CacheLocalStorage.js" type="text/javascript"></script>
+		<script src="app/recording/model/mRecord.js" type="text/javascript"></script>
+		<script src="app/recording/model/mSection.js" type="text/javascript"></script>
+		<script src="app/geocoding/model/mNominatim.js" type="text/javascript"></script>
+		<script src="app/tour/collection/waypoints.js" type="text/javascript"></script>
+		<script src="app/tour/collection/trackpoints.js" type="text/javascript"></script>
+		<script src="app/tour/collection/tour.js" type="text/javascript"></script>
+		<script src="app/recording/collection/cSections.js" type="text/javascript"></script>
+		<script src="app/view/app.js" type="text/javascript"></script>
+		<script src="app/tour/view/trackDetails.js" type="text/javascript"></script>
+		<script src="app/gps/view/vCompass.js" type="text/javascript"></script>
+		<script src="app/gps/view/vAccuracy.js" type="text/javascript"></script>
+		<script src="app/UI/view/btn-zoom-plus.js" type="text/javascript"></script>
+		<script src="app/UI/view/btn-zoom-minus.js" type="text/javascript"></script>
+		<script src="app/UI/view/btn-resize.js" type="text/javascript"></script>
+		<script src="app/map/view/openlayers.js" type="text/javascript"></script>
+		<script src="app/UI/view/speed.js" type="text/javascript"></script>
+		<script src="app/UI/view/distance.js" type="text/javascript"></script>
+		<script src="app/UI/view/altitude.js" type="text/javascript"></script>
+		<script src="app/UI/view/vTime.js" type="text/javascript"></script>
+		<script src="app/UI/view/info.js" type="text/javascript"></script>
+		<script src="app/tour/view/tracks.js" type="text/javascript"></script>
+		<script src="app/UI/view/vWaypointDialog.js" type="text/javascript"></script>
+		<script src="app/UI/view/vProgressbar.js" type="text/javascript"></script>
+		<script src="app/tour/view/trackManagement.js" type="text/javascript"></script>
+		<script src="app/tour/view/tracklist.js" type="text/javascript"></script>
+		<script src="app/search/view/vExtendedOptions.js" type="text/javascript"></script>
+		<script src="app/settings/view/settingspage.js" type="text/javascript"></script>
+		<script src="app/settings/view/btn-userdata.js" type="text/javascript"></script>
+		<script src="app/settings/view/check-options.js" type="text/javascript"></script>
+		<script src="app/settings/view/select-map.js" type="text/javascript"></script>
+		<script src="app/settings/view/btn-abort-download.js" type="text/javascript"></script>
+		<script src="app/recording/view/vBtnRecord.js" type="text/javascript"></script>
+		<script src="app/tour/view/vUploadDialog.js" type="text/javascript"></script>
+		<script src="app/gps/controller/cCompass.js" type="text/javascript"></script>
+		<script src="app/UI/controller/cProgressbar.js" type="text/javascript"></script>
+		<script src="app/UI/controller/cWaypointCreation.js" type="text/javascript"></script>
+		<script src="app/UI/controller/cWaypointDialog.js" type="text/javascript"></script>
+		<script src="app/search/controller/cSearch.js" type="text/javascript"></script>
+		<script src="app/map/controller/cMapDownload.js" type="text/javascript"></script>
+		<script src="app/recording/controller/cBtnRecord.js" type="text/javascript"></script>
+		<script src="app/recording/controller/cRecordDialog.js" type="text/javascript"></script>
+		<script src="app/tour/controller/cUploadDialog.js" type="text/javascript"></script>
+		<script type="text/javascript">/* <![CDATA[ */
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-118501-9']);
+			_gaq.push(['_trackPageview']);
+			_gaq.push(['_setAllowLinker', true]);
+			_gaq.push(['_setDomainName', 'none']);
+			(function() {
+			  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		/* ]]> */
+		</script>
+		<script type="text/javascript">/* <![CDATA[ */
+		//Wenn die Seite fertig geladen wurde, wird die Funktion ausgefuehrt
+					$(document).ready(function load() {
+						//Initiiert das Application-Objekt
+						mGtiApplication.init();
+					});
+		/* ]]> */
+		</script>
+	</head>
+	<body><!-- Hauptseite. Ein Page Element von jQuery-Mobile -->
+		<div data-role="page" id="div_main">
+			<div data-role="content" style="padding: 0; z-index: 500;" id="div_content">
+
+				<!-- Div-Tags fuer den Fortschrittsbalken -->
+				<div data-role="none" id="div_progressbar_container" class="progressbar_container">
+					<div data-role="none" id="div_progressbar" class="progressbar">
+					</div>
+				</div>
+
+				<div id="wpOuter" style="visibility: hidden;" class="createWaypointOuterRing">
+					<div id="wpInner" style="visibility: hidden" class="createWaypointStart">
+					</div>
+				</div>
+
+				<!-- Div-Tags fuer die Zoom-Buttons -->
+				<div data-role="none" id="div_zoom_plus">
+					<input id="zoom_plus" style="z-index: 1000;" data-role="none" type="image" class="btn-zoom-plus" src="res/mainscreen/Button-Plus.png" alt="Groesser">
+				</div>
+
+				<div data-role="none" id="div_zoom_minus">
+					<input id="zoom_minus" style="z-index: 1000" data-role="none" type="image" class="btn-zoom-minus" src="res/mainscreen/Button-Minus.png" alt="Kleiner">
+				</div>
+
+				<!-- Div-Tags fuer die vier moeglichen Info-Felder -->
+				<div data-role="none" id="div_speed" class="speed" style="visibility:visible">
+					<p id="p_speed" class="speed">0 km/h</p>
+				</div>
+				<div data-role="none" id="div_distance" class="distance" style="visibility:visible">
+					<p id="p_distance" class="distance" style="z-index: 1000">0 km</p>
+				</div>
+				<div for="altitude" id="div_altitude" class="altitude" style="visibility:visible">
+					<p id="p_altitude" class="altitude">0 m</p>
+				</div>
+				<div data-role="none" id="div_time" class="time" style="visibility:visible">
+					<p id="p_time" class="time">00:00:00</p>
+				</div>
+
+				<!-- Div-Tag fuer die Auswahl der Infofelder-->
+				<div  id ="div_info" data-role="none" class="info-sel">
+					<select name="select-info" id="sel-info" multiple="multiple" data-theme="a" data-iconpos="notext">
+
+						<option selected="true" value="altitude" >Hoehe</option>
+						<option selected="true" value="speed">Geschwindigkeit</option>
+						<option selected="true" value="distance">Strecke</option>
+						<option selected="true" value="time">Zeit</option>
+					</select>
+				</div>
+
+				<!-- Div-Tag fuer den Kompass -->
+				<div data-role="none" id="div_compass">
+					<input id="compass" data-role="none" style="z-index: 1000" type="image" class="btn-compass" src="" alt="Kompass">
+				</div>
+
+				<!-- Div-Taga fuer den Resize-Button -->
+				<div data-role="none" id="div_resize" style="display: none">
+					<input id="btn_resize" style="z-index: 1000" data-role="none" type="image" class="btn-resize" src="res/Icons/resize.png" alt="Resize">
+				</div>
+
+				<!-- Div-Tag fuer das Kartenmaterial -->
+				<div id="div_map" class="map">
+				</div>
+
+				<!-- Div-Tag fuer die Karte zum Download von Kartenmaterial -->
+				<div id="div_download_map" class="div_download_map"></div>
+			</div>
+
+			<!-- Die Fußzeile der Seite mit den Buttons -->
+			<div data-role="footer" id="div_footer" data-position="fixed" data-tap-toggle="false">
+				<div data-role="navbar" class="nav-custom" id="nav_footer" data-tap-toggle="false">
+					<ul>
+						<li><a href="search.html" id="btn_search" data-icon="custom" onclick="_gaq.push([navigateApp, search, null, null, false];">Suche</a></li>
+						<li><a href="trackManagement.html" id="btn_tracks" data-icon="custom" onclick="_gaq.push([navigateApp, tracks, null, null, false];">Tracks</a></li>
+						<li>
+							<div id="div_btn_record">
+								<a href="#" id="btn_record" data-icon="custom" onclick="_gaq.push([navigateApp, record, null, null, false];">Aufzeichnen</a>
+							</div>
+						</li>
+						<li><a href="settings.html" id="btn_settings" data-icon="custom" onclick="_gaq.push([navigateApp, settings, null, null, false];">Einstellungen</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div data-role="page" id="popup_waypoint">
+			<div data-role="content">
+
+				<h2 id="headline"></h2>
+				<label for="title">Titel:</label>
+				<input type="text" name="title" id="title" placeholder="Titel..." value="" />
+
+				<label for="description">Beschreibung:</label>
+				<input type="text" name="description" id="description" placeholder="Beschreibung..." value=""  />
+
+				<div id="divMyPosition" data-role="fieldcontain">
+				</div>
+
+				<fieldset class="ui-grid-a" id="currentposition" name="currentposition">
+					<div class="ui-block-a"><div class="ui-bar ui-bar-c"><h4>Längengrad: </h4><p></p>
+						<p id="p_longitude"></p></div></div>
+					<div class="ui-block-b"><div class="ui-bar ui-bar-c"><h4>Breitengrad: </h4><p></p>
+						<p id="p_latitude"></p></div></div>
+				</fieldset>
+
+				<div id="div_waypoint_dialog_controls">
+					<div data-role="controlgroup" data-type="horizontal">
+						<a id="btn_addEditWaypoint" style="margin-left: 0%; width: 50%" href="" data-role="button" data-inline="true">OK</a>
+						<a id="btn_cancel" href="" style="width: 49%" data-role="button" data-inline="true">Abbrechen</a>
+					</div>
+					<a id="btn_deleteWaypoint" style="margin-left: 0%; width: 100%; background:#FF0000" href="" data-role="button">Löschen</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
