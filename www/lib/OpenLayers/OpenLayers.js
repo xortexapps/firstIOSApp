@@ -14029,13 +14029,13 @@ OpenLayers.Tile.Image = OpenLayers.Class(OpenLayers.Tile, {
         img.style.opacity = 0;
         if (url) {
             // don't set crossOrigin if the url is a data URL
-            if (this.crossOriginKeyword) {
+            /*if (this.crossOriginKeyword) {
                 if (url.substr(0, 5) !== 'data:') {
                     img.setAttribute("crossorigin", this.crossOriginKeyword);
                 } else {
                     img.removeAttribute("crossorigin");
                 }
-            }
+            }*/
             img.src = url;
         }
     },
