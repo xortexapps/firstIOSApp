@@ -16,7 +16,7 @@ var mGtiMapViewOpenLayers = Backbone.View.extend({
             ],
             layers: [
                 new OpenLayers.Layer.OSM("OpenStreetMap",
-                    ["./tiles/tiles.php?z=${z}&x=${x}&y=${y}&r=mapnik"],
+                    ["http://gps-tour.work.5.xortex.com/navigate/tiles/tiles.php?z=${z}&x=${x}&y=${y}&r=mapnik"],
                     { transitionEffect: 'resize',
                         isBaseLayer:false,
                         serverResolutions: [156543.03390625, 78271.516953125,
@@ -41,7 +41,7 @@ var mGtiMapViewOpenLayers = Backbone.View.extend({
                             0.5971642833948135]
                     }),
                 new OpenLayers.Layer.OSM("OpenCycleMap",
-                    ["./tiles/tiles.php?z=${z}&x=${x}&y=${y}&r=cycle"],
+                    ["http://gps-tour.work.5.xortex.com/navigate/tiles/tiles.php?z=${z}&x=${x}&y=${y}&r=cycle"],
                     { transitionEffect: 'resize',
                         isBaseLayer: true,
                         visibility: false,
@@ -73,7 +73,7 @@ var mGtiMapViewOpenLayers = Backbone.View.extend({
         })
         );
 
-        OpenLayers.ProxyHost = "./tiles.php?z=${z}&x=${x}&y=${y}&r=mapnik";
+        OpenLayers.ProxyHost = "http://gps-tour.work.5.xortex.com/navigate/tiles/tiles.php?z=${z}&x=${x}&y=${y}&r=mapnik";
         
         mGtiApplication.Objects.get("vMap").initClickHandler();
         

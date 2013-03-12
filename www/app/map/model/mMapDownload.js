@@ -109,7 +109,7 @@ var mGtiMapModelMapDownload = Backbone.Model.extend({
                 //console.log("added osm");
                 //Hinzufuegen des OpenStreetMap-Layers
                 self.get("map").addLayer(new OpenLayers.Layer.OSM("OpenStreetMap",
-                    ["./tiles/tiles.php?z=${z}&x=${x}&y=${y}&r=mapnik"],
+                    ["http://gps-tour.work.5.xortex.com/navigate/tiles/tiles.php?z=${z}&x=${x}&y=${y}&r=mapnik"],
                     {
                         transitionEffect: 'resize',
                         isBaseLayer:true,
@@ -122,7 +122,7 @@ var mGtiMapModelMapDownload = Backbone.Model.extend({
                 //console.log("added ocm");
                 //Hinzufuegen des OpenCyleMap-Layers
                 self.get("map").addLayer(new OpenLayers.Layer.OSM("OpenCycleMap",
-                    ["./tiles/tiles.php?z=${z}&x=${x}&y=${y}&r=cycle"],
+                    ["http://gps-tour.work.5.xortex.com/navigate/tiles/tiles.php?z=${z}&x=${x}&y=${y}&r=cycle"],
                     {
                         transitionEffect: 'resize', isBaseLayer: true,
                         eventListeners: {
